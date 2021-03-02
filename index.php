@@ -53,6 +53,19 @@ $data_list = [
     ]
 ];
 ?>
+<?php function sum_price ($sun, $withRubleElem ) {
+  ceil($sun);
+  if($sun < 1000) {
+      return $sun;
+  }
+  else {
+      $sun = number_format ($sun , 0 , '.',' ');
+      return $sun;
+  }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -129,7 +142,7 @@ $data_list = [
                     <div class="lot__state">
                         <div class="lot__rate">
                             <span class="lot__amount">Стартовая цена</span>
-                            <span class="lot__cost"><?php echo $val['count']?><b class="rub">р</b></span>
+                            <span class="lot__cost"><? echo sum_price($val['count'], true)?><b class="rub">р</b></span>
                         </div>
                         <div class="lot__timer timer">
                             12:23
