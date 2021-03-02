@@ -2,6 +2,53 @@
 $is_auth = rand(0, 1);
 
 $user_name = 'linkiz'; // укажите здесь ваше имя
+
+$categories_list = [
+    'boards' => "Доски и лыжи",
+    'shoes' => "Ботинки",
+    'clothes' => "Одежда",
+    'fastenings' => "Крепления",
+    'tools' => "Инструменты",
+    'different' => "Разное"
+    ];
+
+$data_list = [
+    'name' => "2014 Rossignol District Snowboard",
+    'cat' => 'boards',
+    'count' => '10999',
+    'img' => 'img/lot-1.jpg'
+    ];
+    [
+        'name' => "DC Ply Mens 2016/2017 Snowboard",
+        'cati' => 'boards',
+        'count' => '15999',
+        'img' => 'img/lot-2.jpg'
+
+    ];
+    [
+        'name' => "Крепления Union Contact Pro 2015 года размер L/XL",
+        'cati' => 'boards',
+        'count' => '7999',
+        'img' => 'img/lot-3.jpg'
+    ];
+    [
+        'name' => "Ботинки для сноуборда DC Mutiny Charocal",
+        'cati' => 'boards',
+        'count' => '9999',
+        'img' => 'img/lot-4.jpg'
+    ];
+    [
+        'name' => "Куртка для сноуборда DC Mutiny Charocal",
+        'cati' => 'boards',
+        'count' => '17500',
+        'img' => 'img/lot-5.jpg'
+    ];
+    [
+        'name' => "Маска Oakley Canopy",
+        'cati' => 'boards',
+        'count' => '3500',
+        'img' => 'img/lot-6.jpg'
+    ]
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -53,10 +100,13 @@ $user_name = 'linkiz'; // укажите здесь ваше имя
         <h2 class="promo__title">Нужен стафф для катки?</h2>
         <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
         <ul class="promo__list">
-            <!--заполните этот список из массива категорий-->
-            <li class="promo__item promo__item--boards">
-                <a class="promo__link" href="pages/all-lots.html">Имя категории</a>
+            <?php foreach ($categories_list as $lin=>$val) : ?>
+
+
+            <li class="promo__item promo__item-- <?php $lin ?>">
+                <a class="promo__link" href="pages/all-lots.html"><?php $val?></a>
             </li>
+    <?php endforeach;?>
         </ul>
     </section>
     <section class="lots">
