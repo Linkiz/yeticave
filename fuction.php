@@ -78,3 +78,14 @@ function compile_tamplate($template, $template_data){
 
 }
 ?>
+<?php
+function Timer(){
+    $now = strtotime('now');
+    $now2 = strtotime('tomorrow');
+    $second = $now2 - $now;
+    $hours = floor($second/3600);
+    $minute = (($second/3600) - $hours)*60;
+    $timer = sprintf('%02d:%02d',$hours,$minute);
+    return $timer;
+}
+?>
