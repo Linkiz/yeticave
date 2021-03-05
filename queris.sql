@@ -17,7 +17,7 @@ INSERT INTO users SET user_name = 'Admin', user_email = 'admin@mail.ru', user_pa
 INSERT INTO users SET user_name = 'Neadmin', user_email = 'neadmin@gmail.com', user_password = 'rerfhtre', user_signup_date = NOW();
 
 INSERT INTO rate SET lot_id = 5, user_id = 1, rate_date = NOW(), rate_price = '1000';
-INSERT INTO rate SET lot_id = 10, user_id = 2, rate_date = NOW(), rate_price = '500';
+INSERT INTO rate SET lot_id = 1, user_id = 2, rate_date = NOW(), rate_price = '500';
 
 
 
