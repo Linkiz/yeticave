@@ -5,8 +5,8 @@ mysqli_set_charset($link, 'utf8');
 $query = 'select * from categories';
 $res = mysqli_query($link, $query);
 $query2 = 'select * from lots';
-$res2 = mysqli_fetch_all($link, $query2);
-if($res){
+$res2 = mysqli_query($link, $query2);
+if($res){-
     echo mysqli_error($link);
 }
 if($res2) {
