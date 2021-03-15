@@ -6,7 +6,7 @@ $query = 'select * from categories';
 $res = mysqli_query($link, $query);
 $query2 = 'select * from lots';
 $res2 = mysqli_query($link, $query2);
-if($res){-
+if($res){
     echo mysqli_error($link);
 }
 if($res2) {
