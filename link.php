@@ -18,4 +18,5 @@ $categories_list = mysqli_fetch_all($res,MYSQLI_ASSOC);
 
 $data_list = mysqli_fetch_all($res2,MYSQLI_ASSOC);
 
+
 ?>
