@@ -6,6 +6,7 @@ require 'link.php';
 
 
 $currentLot = null;
+
 if(isset($_GET['id'])){
     $lotID = intval($_GET['id']);
     foreach ($data_list as $lot){
