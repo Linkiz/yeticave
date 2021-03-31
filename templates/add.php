@@ -25,7 +25,7 @@
                     <option><?= $category['categ_name']?></option>
                     <? endforeach;?>
                 </select>
-                <span class="form__error">Выберите категорию</span>
+                <span class="form__error">Выберите  категорию</span>
             </div>
         </div>
         <div class="form__item form__item--wide <?= empty($errors['message'])? "" : "form__item--invalid" ?>">

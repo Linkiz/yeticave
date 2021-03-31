@@ -3,9 +3,9 @@
 require ('link.php');
 
 
-$is_auth = rand(0, 1);
+//$is_auth = rand(0, 1);
 
-$user_name = 'linkiz'; // укажите здесь ваше имя
+// = 'linkiz'; // укажите здесь ваше имя
 
 //$categories_list =
   //  [
